@@ -14,6 +14,24 @@ let dummyEpisodes = [
         appleLink: 'www.google.com',
         spotifyLink: 'www.youtube.com'
     },
+    {
+        description: 'some other description',
+        imgURL: 'https://images.unsplash.com/photo-1535189043414-47a3c49a0bed?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2378&q=80',
+        appleLink: 'www.google.com',
+        spotifyLink: 'www.youtube.com'
+    },
+    {
+        description: 'some other description',
+        imgURL: 'https://images.unsplash.com/photo-1535189043414-47a3c49a0bed?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2378&q=80',
+        appleLink: 'www.google.com',
+        spotifyLink: 'www.youtube.com'
+    },
+    {
+        description: 'some other description',
+        imgURL: 'https://images.unsplash.com/photo-1535189043414-47a3c49a0bed?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2378&q=80',
+        appleLink: 'www.google.com',
+        spotifyLink: 'www.youtube.com'
+    },
 ]
 
 class Episodes extends React.Component{
