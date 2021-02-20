@@ -3,7 +3,6 @@ import NavBar from './components/NavBar';
 import Episodes from './components/Episodes';
 import About from './components/About';
 import Contact from './components/Contact';
-import './CSS/App.css';
 
 class App extends React.Component {
   state = {
