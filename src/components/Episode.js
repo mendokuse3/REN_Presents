@@ -3,7 +3,7 @@ import React from 'react';
 const Episode = ({ description, appleLink, spotifyLink, imgURL }) => {
     return (
         <>
-            <div>
+            <div className="mx-2">
                 <img src={imgURL} alt={imgURL} style={{width: '200px', height: '200px'}} />
                 <p>{description}</p>
                 <div>

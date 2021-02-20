@@ -14,6 +14,12 @@ let dummyEpisodes = [
         appleLink: 'www.google.com',
         spotifyLink: 'www.youtube.com'
     },
+    {
+        description: 'and anotha one',
+        imgURL: 'https://i.pinimg.com/originals/ea/09/c9/ea09c92cb8af15284a6fd1953de93b53.jpg',
+        appleLink: 'www.google.com',
+        spotifyLink: 'www.youtube.com'
+    }
 ]
 
 class Episodes extends React.Component{
