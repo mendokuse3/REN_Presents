@@ -4,9 +4,18 @@ import Episodes from './components/Episodes';
 import About from './components/About';
 import Contact from './components/Contact';
 
+import { getHomePage } from './Queries/index';
+
 class App extends React.Component {
   state = {
-    currentTab: 'episodes'
+    currentTab: 'episodes',
+    data: {}
+  }
+
+  async componentDidMount(){
+    const test = await getHomePage();
+    this.setState({data: test})
+    console.log(test)
   }
 
   setCurrentTab = (tab) => {
