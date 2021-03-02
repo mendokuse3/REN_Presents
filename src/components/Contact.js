@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Contact = () => {
+const Contact = ({ data }) => {
+    let text = data.textContent.content[0].content[0].value
     return (
         <>
-            <h2>Contact me at this form below</h2>
+            <h2>{text}</h2>
         </>
     )
 }

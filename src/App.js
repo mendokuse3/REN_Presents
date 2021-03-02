@@ -32,7 +32,7 @@ class App extends React.Component {
 
   render(){
     if(Object.entries(this.state.bannerLogo).length > 0){
-      console.log(this.state.episodes)
+      // console.log(this.state.aboutAndContact)
       return (
         <>
           <NavBar setCurrentTab={this.setCurrentTab} />
@@ -41,11 +41,11 @@ class App extends React.Component {
           </div>
           <h1>REN Presents: The Beacon</h1>
           <div className="grid grid-cols-2">
-            {this.state.currentTab === 'episodes' && <Episodes />}
+            {this.state.currentTab === 'episodes' && <Episodes episodes={this.state.episodes.fields.episodes} />}
           </div>
   
-          {this.state.currentTab === 'about' && <About description='asdfasdf' />}
-          {this.state.currentTab === 'contact' && <Contact />}
+          {this.state.currentTab === 'about' && <About data={this.state.aboutAndContact.fields.homepageSections[0].fields} />}
+          {this.state.currentTab === 'contact' && <Contact data={this.state.aboutAndContact.fields.homepageSections[1].fields} />}
         </>
       )
     }
