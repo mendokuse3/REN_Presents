@@ -24,10 +24,11 @@ let dummyEpisodes = [
 
 class Episodes extends React.Component{
     render(){
+        let episodes = this.props.episodes;
         return (
             <>
                 {/* map through array of episode data to create Episode component and pass in data as props */}
-                {dummyEpisodes.map((ep, i) => {
+                {/* {dummyEpisodes.map((ep, i) => {
                     return (
                         <Episode
                             description={ep.description}
@@ -36,6 +37,22 @@ class Episodes extends React.Component{
                             spotifyLink={ep.spotifyLink}
                             key={i}
                         />
+                    )
+                })} */}
+                {episodes.map((ep) => {
+                    console.log(ep)
+                    return (
+                        <Episode 
+                            description={ep.fields.description.content[0].content[0].value}
+                            imgURL={ep.fields.thumbnail.fields.file.url}
+                            appleLink={ep.fields.appleLink}
+                            spotifyLink={ep.fields.spotifyLink}
+                            key={ep.sys.id}
+                        />
+
+                        // apple and spotify links arre linking to relative paths?
+                        // localhost3000/www.apple.com
+                        // fixable by adding https:// to beginning of link
                     )
                 })}
             </>
