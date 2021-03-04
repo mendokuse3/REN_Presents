@@ -32,7 +32,6 @@ class App extends React.Component {
 
   render(){
     if(Object.entries(this.state.bannerLogo).length > 0){
-      // console.log(this.state.aboutAndContact)
       return (
         <>
           <NavBar setCurrentTab={this.setCurrentTab} />
