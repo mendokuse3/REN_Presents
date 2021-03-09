@@ -25,7 +25,7 @@ class Episode extends React.Component {
     }
 
     render(){
-        const { description, appleLink, spotifyLink, imgURL } = this.props;
+        const { appleLink, spotifyLink, imgURL } = this.props;
 
         return (
             <>
