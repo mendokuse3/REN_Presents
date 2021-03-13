@@ -34,9 +34,17 @@ class App extends React.Component {
     if(Object.entries(this.state.bannerLogo).length > 0){
       return (
         <>
-          <NavBar setCurrentTab={this.setCurrentTab} />
-          <div className='bannerimage'>
-            <img src={this.state.bannerLogo.fields.bannerImage.fields.file.url} alt={this.state.bannerLogo.fields.bannerImage.fields.file.fileName} />
+          <div className="top-banner-section">
+            {/* layer 1 image */}
+            <div className='banner-image-div'>
+              <img className='banner-image' src={this.state.bannerLogo.fields.bannerImage.fields.file.url} alt={this.state.bannerLogo.fields.bannerImage.fields.file.fileName} />
+            </div>
+            {/* Layer 2 gradient */}
+            <div className='banner-overlay-div'></div>
+            {/* Layer 3 Content */}
+            <div className='banner-content-div'>
+              <NavBar setCurrentTab={this.setCurrentTab} />
+            </div>
           </div>
           <h1>REN Presents: The Beacon</h1>
           <div className="grid grid-cols-2">
