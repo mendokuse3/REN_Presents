@@ -47,7 +47,7 @@ class App extends React.Component {
           <h1>REN Presents: The Beacon</h1>
             </div>
           </div>
-          <div className="grid grid-cols-2">
+          <div className="grid episode-grid">
             {this.state.currentTab === 'episodes' && <Episodes episodes={this.state.episodes.fields.episodes} />}
           </div>
   
