@@ -44,9 +44,9 @@ class App extends React.Component {
             {/* Layer 3 Content */}
             <div className='banner-content-div'>
               <NavBar setCurrentTab={this.setCurrentTab} />
+          <h1>REN Presents: The Beacon</h1>
             </div>
           </div>
-          <h1>REN Presents: The Beacon</h1>
           <div className="grid grid-cols-2">
             {this.state.currentTab === 'episodes' && <Episodes episodes={this.state.episodes.fields.episodes} />}
           </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../CSS/episode.css'
 
 // const Episode = ({ description, appleLink, spotifyLink, imgURL }) => {
 class Episode extends React.Component {
@@ -29,12 +30,16 @@ class Episode extends React.Component {
 
         return (
             <>
-                <div className="mx-2">
-                    <img src={imgURL} alt={imgURL} style={{width: '200px', height: '200px'}} />
-                    <p>{this.state.text}{this.state.addEllipsis ? <span id="readmore" onClick={() => this.expand()}>...</span> : ''}</p>
-                    <div>
-                        <a href={appleLink}>Apple Link</a>
-                        <a href={spotifyLink}>Spotify Link</a>
+                <div className="episode-card">
+                    <img className='episode-thumbnail' src={imgURL} alt={imgURL} />
+                    <p className="episode-description" >{this.state.text}{this.state.addEllipsis ? <span id="readmore" onClick={() => this.expand()}>... See More...</span> : ''}</p>
+                    <div className="episode-links" >
+                        <a href={appleLink}>
+                            <i class="fab fa-apple"></i>
+                        </a>
+                        <a href={spotifyLink}>
+                            <i class="fab fa-spotify"></i>
+                        </a>
                     </div>
                 </div>
             </>
