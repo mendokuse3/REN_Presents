@@ -5,7 +5,9 @@ const About = ({ data }) => {
     let description = data.textContent.content[0].content[0].value
     return (
         <>
-            <p>{description}</p>
+            <div className='podcast-description'>
+                <p className="description-text">{description}</p>
+            </div>
         </>
     )
 }

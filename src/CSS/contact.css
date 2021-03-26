@@ -1,4 +1,4 @@
-.podcast-description {
+.contact-page {
     border: 1px solid white;
     margin: 5% auto;
     min-height: 100px;
@@ -8,6 +8,6 @@
     background-color: slategray;
 }
 
-.description-text {
+.contact-text {
     padding: 5%;
 }
