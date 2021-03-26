@@ -6,6 +6,7 @@
     min-width: 100px;
     max-width: 500px;
     background-color: slategray;
+    border-radius: 10px;
 }
 
 .contact-text {
