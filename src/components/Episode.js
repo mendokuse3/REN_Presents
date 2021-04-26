@@ -35,10 +35,10 @@ class Episode extends React.Component {
                     <p className="episode-description" >{this.state.text}{this.state.addEllipsis ? <span id="readmore" onClick={() => this.expand()}>... See More...</span> : ''}</p>
                     <div className="episode-links" >
                         <a href={appleLink}>
-                            <i class="fab fa-apple"></i>
+                            <i className="fab fa-apple"></i>
                         </a>
                         <a href={spotifyLink}>
-                            <i class="fab fa-spotify"></i>
+                            <i className="fab fa-spotify"></i>
                         </a>
                     </div>
                 </div>

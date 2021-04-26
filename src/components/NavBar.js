@@ -6,6 +6,7 @@ const NavBar = (props) => {
             <button className="btn" onClick={() => props.setCurrentTab('episodes')}>Episodes</button>
             <button className="btn" onClick={() => props.setCurrentTab('about')}>About</button>
             <button className="btn" onClick={() => props.setCurrentTab('contact')}>Contact</button>
+            {/* <button className="btn" onClick={() => props.setCurrentTab('blog')}>Blog</button> */}
         </div>
     )
 }

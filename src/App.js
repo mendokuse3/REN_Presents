@@ -3,8 +3,9 @@ import NavBar from './components/NavBar';
 import Episodes from './components/Episodes';
 import About from './components/About';
 import Contact from './components/Contact';
+// import Blog from './components/Blog';
 
-import { getEpisodes, getBannerLogo, getHomePage } from './Queries/index';
+import { getEpisodes, getBannerLogo, getHomePage, getBlogs } from './Queries/index';
 
 class App extends React.Component {
   state = {
@@ -18,12 +19,14 @@ class App extends React.Component {
     const episodeData = await getEpisodes();
     const bannerLogoData = await getBannerLogo();
     const homePageData = await getHomePage();
+    const blogData = await getBlogs();
     this.setState({
       episodes: episodeData,
       bannerLogo: bannerLogoData,
-      aboutAndContact: homePageData
+      aboutAndContact: homePageData,
+      blogs: blogData
     })
-    // console.log(episodeData)
+    // console.log(blogData)
   }
 
   setCurrentTab = (tab) => {
@@ -53,6 +56,7 @@ class App extends React.Component {
   
           {this.state.currentTab === 'about' && <About data={this.state.aboutAndContact.fields.homepageSections[0].fields} />}
           {this.state.currentTab === 'contact' && <Contact data={this.state.aboutAndContact.fields.homepageSections[1].fields} />}
+          {/* {this.state.currentTab === 'blog' && <Blog data={this.state.blogs.fields.blogs} />} */}
         </>
       )
     }

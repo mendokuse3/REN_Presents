@@ -24,3 +24,8 @@ export const getBannerLogo = async () => {
     const data = await contentfulClient.getEntry('2h4aI71QUeRrx7MTQyYAOm')
     return data
 };
+
+export const getBlogs = async () => {
+    const data = await contentfulClient.getEntry('2aI2TxbFs9IUzcdyjL6i14')
+    return data
+}
